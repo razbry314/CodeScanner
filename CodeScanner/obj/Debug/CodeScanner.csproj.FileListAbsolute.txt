@@ -1,0 +1,8 @@
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe.config
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\bin\Debug\CodeScanner.pdb
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.dll
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.pdb
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\obj\Debug\CodeScanner.exe
+c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\obj\Debug\CodeScanner.pdb
