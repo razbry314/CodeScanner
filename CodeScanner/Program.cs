@@ -19,15 +19,30 @@ namespace CodeScanner
 {
     class Program
     {
+        public delegate void MyEventHandler(string foo);
+
+        public static event MyEventHandler MyEventCacher;
+
+        void MyEventChacher(string foo)
+        {
+
+        }
+
+
         static void Main(string[] args)
         {
-            char input;
+            string input;
 
             USBHIDDRIVER.USBInterface usb = new USBInterface("vid_C900FD", "pid_0020467086");
 
             usb.Connect();
 
+            usb.enableUsbBufferEvent(new System.EventHandler(MyEventCacher));
+
             usb.startRead();
+
+
         }
+
     }
 }
