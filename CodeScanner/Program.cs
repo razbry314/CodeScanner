@@ -23,7 +23,7 @@ namespace CodeScanner
 
         public static event MyEventHandler MyEventCacher;
 
-        void MyEventChacher(string foo)
+        public void MyEventChacher(object sender, System.EventArgs e)
         {
 
         }
@@ -41,7 +41,7 @@ namespace CodeScanner
 
             usb.startRead();
 
-
+            usb.stopRead();
         }
 
     }
