@@ -15,12 +15,14 @@ using System.Text;
 using System.Threading.Tasks;
 using USBHIDDRIVER;
 using System.Threading;
+using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace CodeScanner
 {
     class Program
     {
-        public const 
+        
         static ManualResetEvent _quitEvent = new ManualResetEvent(false);
 
         public static void MyEventCacher(object sender, System.EventArgs e)
@@ -45,11 +47,30 @@ namespace CodeScanner
                     USBHIDDRIVER.USBInterface.usbBuffer.RemoveAt(0);
                 }
 
+                string Url = isUrl(result);
 
+                if (Url != "")
+                {
+                    Process.Start(Url);
+                }
 
             }
         }
 
+        public static string isUrl(string input)
+        {
+            Regex UrlRegex = new Regex("(http|ftp|https)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?");
+            Match result = UrlRegex.Match(input);
+            if (result.Success)
+            {
+                Console.WriteLine(result.Value + Environment.NewLine);
+                return(result.Value);
+            }
+            else
+            {
+                return "";
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -62,7 +83,6 @@ namespace CodeScanner
             usb.startRead();
 
             Console.Write("Press CTRL+C To Quit" + Environment.NewLine);
-
             Console.CancelKeyPress += (sender, eArgs) =>
             {
                 _quitEvent.Set();
@@ -72,6 +92,7 @@ namespace CodeScanner
             _quitEvent.WaitOne();
 
             usb.stopRead();
+
         }
 
 
