@@ -27,8 +27,7 @@ namespace CodeScanner
 
         public static void MyEventCacher(object sender, System.EventArgs e)
         {
-            Console.Write("Event Caught" + Environment.NewLine);
-            if (USBHIDDRIVER.USBInterface.usbBuffer.Count > 0)
+           if (USBHIDDRIVER.USBInterface.usbBuffer.Count > 0)
             {
                 int counter = 0;
 
@@ -47,29 +46,41 @@ namespace CodeScanner
                     USBHIDDRIVER.USBInterface.usbBuffer.RemoveAt(0);
                 }
 
-                string Url = isUrl(result);
+                bool isUrl;
+                string UrlString;
 
-                if (Url != "")
+                CheckUrl(result, out isUrl, out UrlString);
+
+
+                if (isUrl)
                 {
-                    Process.Start(Url);
+                    Process.Start(UrlString);
+                }
+                else
+                {
+                    Console.WriteLine("No Url: " + result.Replace("/0", "") + Environment.NewLine);
                 }
 
             }
         }
 
-        public static string isUrl(string input)
+        public static void CheckUrl(string input, out bool isUrl, out string UrlString)
         {
             Regex UrlRegex = new Regex("(http|ftp|https)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?");
             Match result = UrlRegex.Match(input);
+
             if (result.Success)
             {
                 Console.WriteLine(result.Value + Environment.NewLine);
-                return(result.Value);
+                isUrl = true; 
+                UrlString = (result.Value);
             }
             else
             {
-                return "";
+                isUrl = false;
+                UrlString = "";
             }
+
         }
 
         static void Main(string[] args)
