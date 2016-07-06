@@ -14,11 +14,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using USBHIDDRIVER;
+using System.Threading;
 
 namespace CodeScanner
 {
     class Program
     {
+        static ManualResetEvent _quitEvent = new ManualResetEvent(false);
 
         public static void MyEventCacher(object sender, System.EventArgs e)
         {
@@ -28,15 +30,6 @@ namespace CodeScanner
 
         static void Main(string[] args)
         {
-            string input;
-            //USB\VID_11FA&PID_0202
-
-
-
-            /*USBHIDDRIVER.USBInterface usbI = new USBInterface("0");
-            String[] list = usbI.getDeviceList();
-            String thisdevice = list[0];*/
-
             USBHIDDRIVER.USBInterface usb = new USBInterface("vid_11fa", "pid_0202");
 
             usb.Connect();
@@ -45,8 +38,20 @@ namespace CodeScanner
 
             usb.startRead();
 
+            Console.Write("Press CTRL+C To Quit");
+
+            Console.CancelKeyPress += (sender, eArgs) =>
+            {
+                _quitEvent.Set();
+                eArgs.Cancel = true;
+            };
+
+            _quitEvent.WaitOne();
+
             usb.stopRead();
         }
+
+
 
     }
 }
