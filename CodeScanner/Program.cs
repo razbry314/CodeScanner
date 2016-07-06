@@ -19,21 +19,25 @@ namespace CodeScanner
 {
     class Program
     {
-        public delegate void MyEventHandler(string foo);
 
-        public static event MyEventHandler MyEventCacher;
-
-        public void MyEventChacher(object sender, System.EventArgs e)
+        public static void MyEventCacher(object sender, System.EventArgs e)
         {
-
+            Console.Write("Event Caught");
         }
 
 
         static void Main(string[] args)
         {
             string input;
+            //USB\VID_11FA&PID_0202
 
-            USBHIDDRIVER.USBInterface usb = new USBInterface("vid_C900FD", "pid_0020467086");
+
+
+            /*USBHIDDRIVER.USBInterface usbI = new USBInterface("0");
+            String[] list = usbI.getDeviceList();
+            String thisdevice = list[0];*/
+
+            USBHIDDRIVER.USBInterface usb = new USBInterface("vid_11fa", "pid_0202");
 
             usb.Connect();
 
