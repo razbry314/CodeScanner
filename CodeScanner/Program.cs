@@ -20,11 +20,34 @@ namespace CodeScanner
 {
     class Program
     {
+        public const 
         static ManualResetEvent _quitEvent = new ManualResetEvent(false);
 
         public static void MyEventCacher(object sender, System.EventArgs e)
         {
-            Console.Write("Event Caught");
+            Console.Write("Event Caught" + Environment.NewLine);
+            if (USBHIDDRIVER.USBInterface.usbBuffer.Count > 0)
+            {
+                int counter = 0;
+
+                while ((byte[])USBHIDDRIVER.USBInterface.usbBuffer[counter] == null)
+                {
+                    lock (USBHIDDRIVER.USBInterface.usbBuffer.SyncRoot)
+                    {
+                        USBHIDDRIVER.USBInterface.usbBuffer.RemoveAt(0);
+                    }
+                }
+
+                string result = System.Text.Encoding.ASCII.GetString((byte[])USBHIDDRIVER.USBInterface.usbBuffer[0]);
+
+                lock (USBHIDDRIVER.USBInterface.usbBuffer.SyncRoot)
+                {
+                    USBHIDDRIVER.USBInterface.usbBuffer.RemoveAt(0);
+                }
+
+
+
+            }
         }
 
 
@@ -38,7 +61,7 @@ namespace CodeScanner
 
             usb.startRead();
 
-            Console.Write("Press CTRL+C To Quit");
+            Console.Write("Press CTRL+C To Quit" + Environment.NewLine);
 
             Console.CancelKeyPress += (sender, eArgs) =>
             {
