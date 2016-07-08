@@ -20,3 +20,10 @@ C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.e
 C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.pdb
 C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.pdb
 C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe.config
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.exe
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.pdb
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.pdb
+C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.pdb
