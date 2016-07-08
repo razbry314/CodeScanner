@@ -6,24 +6,3 @@ c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\bi
 c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
 c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\obj\Debug\CodeScanner.exe
 c:\users\rzurek\documents\visual studio 2013\Projects\CodeScanner\CodeScanner\obj\Debug\CodeScanner.pdb
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe.config
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.exe
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.pdb
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.pdb
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.pdb
-C:\Users\ecook\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe.config
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.exe
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.pdb
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.pdb
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.pdb
-C:\Users\rzurek\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe.config
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.exe
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.pdb
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\obj\Debug\CodeScanner.csprojResolveAssemblyReference.cache
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.exe
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\CodeScanner.pdb
-C:\Users\Rick\Documents\GitHub\CodeScanner\CodeScanner\bin\Debug\USBHIDDRIVER.pdb
