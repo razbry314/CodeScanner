@@ -1,4 +1,4 @@
-﻿/* Rick Zurek
+﻿/* Rick Zurek and Elliot Cook
  * 6/29/2016
  * using USBHIDDRIVER by Florian Leitner-Fischer
  * documentation and download avalible at: http://www.florian-leitner.de/index.php/2007/08/03/hid-usb-driver-library/
